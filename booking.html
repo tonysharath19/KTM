@@ -38,11 +38,11 @@
 
         <!-- Phone -->
         <label for="phone">Phone Number *</label>
-        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="XXXXXXXXXX">
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="xxxxxxxxxx">
 
         <!-- Email -->
         <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g. user@example.com)" placeholder="user@mail.com">
+        <input type="email" id="email" name="email" required pattern=".+@.+\.com" title="Please enter a valid email address with '@' and '.com'" placeholder="example@mail.com">
 
         <!-- Hours -->
         <label for="hours">Total Hours *</label>
@@ -50,6 +50,11 @@
           <button type="button" class="hours-btn" onclick="changeHours(-1)">-</button>
           <input type="number" id="hours" name="hours" min="1" value="1" required>
           <button type="button" class="hours-btn" onclick="changeHours(1)">+</button>
+        </div>
+
+        <!-- Total Price -->
+        <div class="total-price">
+          <p>Total Price: ₹<span id="totalPrice">1000</span></p>
         </div>
 
         <!-- Special Requests -->

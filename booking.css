@@ -1,180 +1,172 @@
-/* Inherit same global styles from surprise.css style */
+/* Reset & global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: white;
-    color: #333;
-    line-height: 1.6;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  /* Header */
-  header {
-    background-color: #c71585;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    flex: 1;
-  }
-  
-  .home-btn {
-    background: white;
-    color: #c71585;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .hamburger {
-    font-size: 24px;
-    cursor: pointer;
-    border: 2px solid white;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  /* Side Navigation */
-  .side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #c71585;
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding-top: 60px;
-    z-index: 2000;
-  }
-  
-  .side-nav a {
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    margin: 10px 20px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.1);
-    text-align: center;
-  }
-  
-  /* Form Section */
-  .content {
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .booking-section {
-    background: #ffe4ec;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-  }
-  
-  .booking-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #c71585;
-  }
-  
-  form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-    color: #c71585;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #c71585;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    font-size: 1rem;
-  }
-  
-  .hours-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 200px;
-    margin-bottom: 15px;
-  }
-  
-  .hours-container input {
-    width: 60px;
-    text-align: center;
-  }
-  
-  .hours-btn {
-    background: #c71585;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .hours-btn:hover {
-    background: #a01367;
-  }
-  
-  .submit-btn {
-    background: #c71585;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-  }
-  
-  .submit-btn:hover {
-    background: #a01367;
-  }
-  
-  /* Footer */
-  footer {
-    background: #c71585;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Mobile */
-  @media (max-width: 768px) {
-    .hours-container {
-      max-width: 100%;
-    }
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Header */
+header {
+  background-color: #c71585;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+.home-btn {
+  background: white;
+  color: #c71585;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Side Nav */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c71585;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 2000;
+}
+
+.side-nav a {
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin: 10px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* Booking Form */
+.content {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-section {
+  background: #ffe4ec;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.booking-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c71585;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #c71585;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #c71585;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.hours-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.hours-container input {
+  width: 60px;
+  text-align: center;
+}
+
+.hours-btn {
+  background: #c71585;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hours-btn:hover {
+  background: #a01367;
+}
+
+.submit-btn {
+  background: #c71585;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.submit-btn:hover {
+  background: #a01367;
+}
+
+/* Footer */
+footer {
+  background: #c71585;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
