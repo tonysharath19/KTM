@@ -1,0 +1,153 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 60px; /* To avoid overlap with fixed footer */
+  }
+
+  /* Header */
+  header {
+    background-color: #c71585; /* Dark Pink */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .home-btn {
+    background: white;
+    color: #c71585; /* Dark Pink */
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .home-btn:hover {
+    background: #ffe4ec;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .hamburger:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffe4ec;
+  }
+
+  /* Side Navigation */
+  .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #c71585; /* Dark Pink */
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+  }
+
+  .side-nav a {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .side-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffe4ec;
+  }
+
+  .side-nav .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* Body */
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: justify;
+  }
+
+  /* Footer */
+  footer {
+    background: #c71585; /* Dark Pink */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Mobile tweaks */
+  @media (max-width: 600px) {
+    header {
+      padding: 8px 15px;
+    }
+    .logo {
+      font-size: 1.1rem;
+    }
+    .content {
+      padding: 15px 10px;
+    }
+    .info {
+      font-size: 1rem;
+    }
+  }
+  

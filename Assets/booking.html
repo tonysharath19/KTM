@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <button class="hamburger" onclick="openMenu()">☰</button>
+    <div class="logo">My Logo</div>
+    <a href="index.html" class="home-btn">Home</a>
+  </header>
+
+  <!-- Side Navigation -->
+  <div id="sideMenu" class="side-nav">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="services.html">Services</a>
+    <a href="surprise.html">Surprise</a>
+    <a href="booking.html">Bookings</a>
+    <a href="contactme.html">Contact Me</a>
+  </div>
+
+  <!-- Booking Form Section -->
+  <div class="content">
+    <section class="booking-section">
+      <h2>Book a Service</h2>
+      <form id="bookingForm" action="https://formspree.io/f/mzzallkq" method="POST">
+        
+        <!-- Name -->
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="XXXXXXXXXX">
+
+        <!-- Email -->
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g. user@example.com)" placeholder="user@mail.com">
+
+        <!-- Hours -->
+        <label for="hours">Total Hours *</label>
+        <div class="hours-container">
+          <button type="button" class="hours-btn" onclick="changeHours(-1)">-</button>
+          <input type="number" id="hours" name="hours" min="1" value="1" required>
+          <button type="button" class="hours-btn" onclick="changeHours(1)">+</button>
+        </div>
+
+        <!-- Special Requests -->
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Enter any special requirements..."></textarea>
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">Book Now</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website | Made with ❤️ in Pink & White</p>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>

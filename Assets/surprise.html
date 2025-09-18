@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Scratch Cards</title>
+  <link rel="stylesheet" href="surprise.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <button class="hamburger" onclick="openMenu()">☰</button>
+    <div class="logo">My Logo</div>
+    <a href="index.html" class="home-btn">Home</a>
+  </header>
+
+  <!-- Side Navigation -->
+  <div id="sideMenu" class="side-nav">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="services.html">Services</a>
+    <a href="surprise.html">Surprise</a>
+    <a href="booking.html">Bookings</a>
+    <a href="contactme.html">Contact Me</a>
+  </div>
+
+  <!-- Body Content -->
+  <div class="content">
+    <section class="surprise-section reveal">
+      <div class="scratch-card">
+        <img src="../Media/images/s1.webp" alt="Surprise Image 1" class="hidden-image">
+        <canvas class="scratch-canvas" width="300" height="200"></canvas>
+      </div>
+      <p class="quote">"Life is a journey, not a destination."</p>
+    </section>
+    <section class="surprise-section reveal">
+      <div class="scratch-card">
+        <img src="../Media/images/s2.webp" alt="Surprise Image 2" class="hidden-image">
+        <canvas class="scratch-canvas" width="300" height="200"></canvas>
+      </div>
+      <p class="quote">"The best way to predict the future is to create it."</p>
+    </section>
+    <section class="surprise-section reveal">
+      <div class="scratch-card">
+        <img src="../Media/images/s3.webp" alt="Surprise Image 3" class="hidden-image">
+        <canvas class="scratch-canvas" width="300" height="200"></canvas>
+      </div>
+      <p class="quote">"Believe you can and you're halfway there."</p>
+    </section>
+    <section class="surprise-section reveal">
+      <div class="scratch-card">
+        <img src="../Media/images/m4.jpg" alt="Surprise Image 4" class="hidden-image">
+        <canvas class="scratch-canvas" width="300" height="200"></canvas>
+      </div>
+      <p class="quote">"The only way to do great work is to love what you do."</p>
+    </section>
+    <section class="surprise-section reveal">
+      <div class="scratch-card">
+        <img src="../Media/images/m5.jpg" alt="Surprise Image 5" class="hidden-image">
+        <canvas class="scratch-canvas" width="300" height="200"></canvas>
+      </div>
+      <p class="quote">"You miss 100% of the shots you don't take."</p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website | Made with ❤️ in Pink & White</p>
+  </footer>
+
+  <script src="surprise.js"></script>
+</body>
+</html>
