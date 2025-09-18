@@ -7,17 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const img = card.querySelector('.hidden-image');
 
     function initCanvas() {
+      // Match canvas size with image
       canvas.width = img.width;
       canvas.height = img.height;
 
-      // Silver-gray overlay
+      // Silver-gray overlay background
       const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
       gradient.addColorStop(0, "#dcdcdc");
       gradient.addColorStop(1, "#a9a9a9");
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Draw "Scratch Me" text
+      // Add "Scratch Me" text
       ctx.fillStyle = "black";
       ctx.font = "bold 28px Arial";
       ctx.textAlign = "center";
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ctx.fillText("Scratch Me", canvas.width / 2, canvas.height / 2);
     }
 
+    // Initialize when image is loaded
     if (img.complete) {
       initCanvas();
     } else {
@@ -63,12 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isDrawing) return;
       e.preventDefault();
       const pos = getPointerPos(e);
-      ctx.globalCompositeOperation = 'destination-out';
+
+      ctx.globalCompositeOperation = 'destination-out'; // erase instead of paint
       ctx.beginPath();
       ctx.arc(pos.x, pos.y, 20, 0, Math.PI * 2);
       ctx.fill();
     }
 
+    // Check if 60% scratched → clear fully
     function checkScratchPercentage() {
       const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
       let pixels = imageData.data;
@@ -85,19 +89,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    // Event listeners
+    // Mouse events
     canvas.addEventListener('mousedown', startDrawing);
-    canvas.addEventListener('touchstart', startDrawing);
-
     canvas.addEventListener('mouseup', stopDrawing);
-    canvas.addEventListener('touchend', stopDrawing);
-
     canvas.addEventListener('mousemove', draw);
+
+    // Touch events
+    canvas.addEventListener('touchstart', startDrawing);
+    canvas.addEventListener('touchend', stopDrawing);
     canvas.addEventListener('touchmove', draw);
   });
 });
 
-// Menu open/close functions
+// Side Menu open/close
 function openMenu() {
   document.getElementById("sideMenu").style.width = "250px";
 }
