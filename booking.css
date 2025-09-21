@@ -120,14 +120,24 @@ form input, form textarea {
 .hours-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   max-width: 200px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
 }
 
 .hours-container input {
   width: 60px;
   text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.hours-container input::-webkit-outer-spin-button,
+.hours-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .hours-btn {

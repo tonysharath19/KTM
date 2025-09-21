@@ -1,12 +1,49 @@
-# TODO List for Fixing Image Links
+# Logo to Text Replacement Task
 
-## Completed Tasks
-- [x] Correct image paths in index.html (changed "../Media/images/m2.jpg" to "Media/images/m2.jpg")
-- [x] Correct image paths in bio.html (changed 3 image paths from "../Media/images/" to "Media/images/")
-- [x] Correct image paths in services.html (changed 6 image paths from "../Media/images/" to "Media/images/")
-- [x] Correct image paths in surprise.html (changed 5 image paths from "../Media/images/" to "Media/images/")
-- [x] Verified booking.html and contactme.html have no local image issues (contactme.html uses external URLs)
+## Plan Implementation Steps:
 
-## Pending Tasks
-- [ ] Test the website pages to confirm images are displaying correctly
-- [ ] If issues persist, check for any remaining incorrect paths or file existence
+### 1. Add Google Font to all HTML files
+- [x] Add font preconnect and stylesheet links to index.html
+- [x] Add font preconnect and stylesheet links to services.html
+- [x] Add font preconnect and stylesheet links to bio.html
+- [x] Add font preconnect and stylesheet links to contactme.html
+- [x] Add font preconnect and stylesheet links to surprise.html
+- [x] Add font preconnect and stylesheet links to booking.html
+
+### 2. Update CSS styling in index.css
+- [x] Modify .logo class to style text instead of image
+- [x] Apply Style Script font family
+- [x] Ensure proper sizing, centering, and color
+- [x] Add responsive design for mobile
+
+### 3. Replace logo image with text in all HTML files
+- [x] Replace logo image with text div in index.html
+- [x] Replace logo image with text div in services.html
+- [x] Replace logo image with text div in bio.html
+- [x] Replace logo image with text div in contactme.html
+- [x] Replace logo image with text div in surprise.html
+- [x] Replace logo image with text div in booking.html
+
+### 4. Testing and Verification
+- [ ] Verify text displays correctly across all pages
+- [ ] Test responsive design on mobile devices
+- [ ] Confirm font loads properly
+- [ ] Check styling matches existing pink theme
+
+## Footer Update Task
+
+### Plan Implementation Steps:
+
+#### 1. Update Footer Text in All HTML Files
+- [x] Replace footer text in index.html
+- [x] Replace footer text in services.html
+- [x] Replace footer text in bio.html
+- [x] Replace footer text in contactme.html
+- [x] Replace footer text in surprise.html
+- [x] Replace footer text in booking.html
+
+#### Current Footer Text:
+- "&copy; 2025 My Website | Made with ❤️ in Pink & White"
+
+#### New Footer Text:
+- "&copy; 2025 KTM ESCORTS AND SERVICES"
